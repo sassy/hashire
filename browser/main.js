@@ -2,6 +2,7 @@
 
 var app = require('app');
 var BrowserWindow = require('browser-window');
+var ipc = require('ipc');
 
 require('crash-reporter').start();
 
@@ -15,8 +16,9 @@ app.on('window-all-closed', function(){
 
 app.on('ready', function() {
   mainWindow = new BrowserWindow({
-    width : 560,
-    height : 315,
+    width : 640,
+    height : 390,
+    frame: false,
     "web-preferences" : {
       "web-security" : false
     }
@@ -26,4 +28,8 @@ app.on('ready', function() {
   mainWindow.on('closed', function() {
     mainWindow = null;
   });
+});
+
+ipc.on('close', function(event, arg) {
+  app.quit();
 });
