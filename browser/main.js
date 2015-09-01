@@ -14,7 +14,13 @@ app.on('window-all-closed', function(){
 });
 
 app.on('ready', function() {
-  mainWindow = new BrowserWindow({width:560, height:315});
+  mainWindow = new BrowserWindow({
+    width : 560,
+    height : 315,
+    "web-preferences" : {
+      "web-security" : false
+    }
+  });
   mainWindow.loadUrl('file://' + __dirname + '/index.html');
 
   mainWindow.on('closed', function() {
