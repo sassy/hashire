@@ -2,11 +2,23 @@
   "name": "hashire",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "bin" : {
+    "hashire" : "bin/hashire"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Satoshi Watanabe",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/sassy/hasire"
+  },
+  "keywords" : [
+    "momoclo", "momoiroclover"
+  ],
+  "author": {
+      "name" : "Satoshi Watanabe",
+      "email" : "sassy.watanabe@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "electron-prebuilt": "^0.31.1"
