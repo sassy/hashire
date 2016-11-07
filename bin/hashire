@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-"use strict";
+'use strict';
 
-var electron = require('electron-prebuilt');
-var proc = require('child_process');
+const electron = require('electron');
+const proc = require('child_process');
 
-var child = proc.spawn(electron, [__dirname + '/../browser']);
+const child = proc.spawn(electron, [__dirname + '/../browser']);

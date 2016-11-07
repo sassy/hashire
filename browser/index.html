@@ -32,6 +32,7 @@
           'onStateChange': onPlayerStateChange
         }
       };
+
       if (index === 0) {
         videoInfo.playerVars.start = '9';
       }
@@ -47,7 +48,7 @@
 
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
-          var ipc = require('ipc');
+          var ipc = require('electron').ipcRenderer;
           ipc.send('close');
         }
       }

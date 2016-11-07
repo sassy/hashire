@@ -1,35 +1,34 @@
 'use strict';
 
-var app = require('app');
-var BrowserWindow = require('browser-window');
-var ipc = require('ipc');
+const {app, BrowserWindow, ipcMain} = require('electron');
+const path = require('path');
+const url = require('url');
 
-require('crash-reporter').start();
+let mainWindow = null;
 
-var mainWindow = null;
-
-app.on('window-all-closed', function(){
+app.on('window-all-closed', () => {
   if (process.platform != 'darwin') {
     app.quit();
   }
 });
 
-app.on('ready', function() {
+app.on('ready', () => {
   mainWindow = new BrowserWindow({
-    width : 640,
-    height : 390,
-    frame: false,
-    "web-preferences" : {
-      "web-security" : false
-    }
+    width: 640,
+    height: 390,
+    frame: false
   });
-  mainWindow.loadUrl('file://' + __dirname + '/index.html');
+  mainWindow.loadURL(url.format({
+    pathname: path.join(__dirname, 'index.html'),
+    protocol: 'file:',
+    slashes: true
+  }));
 
-  mainWindow.on('closed', function() {
+  mainWindow.on('closed', () => {
     mainWindow = null;
   });
 });
 
-ipc.on('close', function(event, arg) {
+ipcMain.on('close', (event, arg) => {
   app.quit();
 });
