@@ -5,53 +5,6 @@
   </head>
   <body>
     <div id="player"></div>
-
-    <script>
-      var videoList = [
-        'S_ajnkUREA8',
-        'GFGN5fa3Go4',
-        '0IrUT0sXrBU'
-      ];
-      var utime = Math.floor( new Date().getTime() / 1000 );
-      var index = utime % videoList.length;
-
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      var videoInfo = {
-        height: '390',
-        width: '640',
-        videoId: videoList[index],
-        playerVars : {
-          "controls" : '0'
-        },
-        events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-        }
-      };
-
-      if (index === 0) {
-        videoInfo.playerVars.start = '9';
-      }
-
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', videoInfo);
-      }
-
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-          var ipc = require('electron').ipcRenderer;
-          ipc.send('close');
-        }
-      }
-    </script>
+    <script src="./renderer.js"></script>
   </body>
 </html>
