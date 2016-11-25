@@ -3,6 +3,7 @@ hashire
 
 [![Join the chat at https://gitter.im/sassy/hasire](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sassy/hasire?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![Dependency Status](https://gemnasium.com/badges/github.com/sassy/hashire.svg)](https://gemnasium.com/github.com/sassy/hashire)
 
 hashire is command line tool. this cli is playing "走れ!(Hashire!)" video.
 
