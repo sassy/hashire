@@ -1,5 +1,4 @@
 const videoList = [
-  'S_ajnkUREA8',
   'GFGN5fa3Go4',
   '0IrUT0sXrBU'
 ];

@@ -42,8 +42,6 @@ Wellcome Pull Request.
 
 ## Video list
 
-[![Alt text for your video](http://img.youtube.com/vi/S_ajnkUREA8/0.jpg)](http://www.youtube.com/watch?v=S_ajnkUREA8)
-
 [![Alt text for your video](http://img.youtube.com/vi/GFGN5fa3Go4/0.jpg)](http://www.youtube.com/watch?v=GFGN5fa3Go4)
 
 [![Alt text for your video](http://img.youtube.com/vi/0IrUT0sXrBU/0.jpg)](http://www.youtube.com/watch?v=0IrUT0sXrBU)
