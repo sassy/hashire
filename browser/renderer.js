@@ -1,6 +1,5 @@
 const videoList = [
-  'GFGN5fa3Go4',
-  '0IrUT0sXrBU'
+  '0IrUT0sXrBU',
 ];
 const utime = Math.floor( new Date().getTime() / 1000 );
 const index = utime % videoList.length;

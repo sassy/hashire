@@ -3,8 +3,6 @@ hashire
 
 [![Join the chat at https://gitter.im/sassy/hasire](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sassy/hasire?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Dependency Status](https://gemnasium.com/badges/github.com/sassy/hashire.svg)](https://gemnasium.com/github.com/sassy/hashire)
-
 hashire is command line tool. this cli is playing "走れ!(Hashire!)" video.
 
 "走れ! is a song by Momoiro Clover. It is very good song. you should listen to this song.
@@ -42,6 +40,5 @@ Wellcome Pull Request.
 
 ## Video list
 
-[![Alt text for your video](http://img.youtube.com/vi/GFGN5fa3Go4/0.jpg)](http://www.youtube.com/watch?v=GFGN5fa3Go4)
 
 [![Alt text for your video](http://img.youtube.com/vi/0IrUT0sXrBU/0.jpg)](http://www.youtube.com/watch?v=0IrUT0sXrBU)
