@@ -22,6 +22,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "electron": "20.0.0"
+    "electron": "20.0.1"
   }
 }
