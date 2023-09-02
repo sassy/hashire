@@ -29,7 +29,7 @@ $ npm install -g hashire
 Wellcome Pull Request.
 
 1. Fork it ( http://github.com/sassy/hashire/fork )
-+ Create your feature branch (git checkout -b my-new-feature)
+2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
 5. Create new Pull Request
@@ -42,3 +42,7 @@ Wellcome Pull Request.
 
 
 [![Alt text for your video](http://img.youtube.com/vi/QSI-dvBS4JI/0.jpg)](http://www.youtube.com/watch?v=QSI-dvBS4JI)
+
+[![Alt text for your video](http://img.youtube.com/vi/tCD81ACqUYk/0.jpg)](http://www.youtube.com/watch?v=tCD81ACqUYk)
+
+[![Alt text for your video](http://img.youtube.com/vi/hGEcfSV_nA8/0.jpg)](http://www.youtube.com/watch?v=hGEcfSV_nA8)
